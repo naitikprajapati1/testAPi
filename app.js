@@ -13,10 +13,12 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.render('home')
 });
-app.get('/city', (req, res) => {
+app.get('api/city', (req, res) => {
     res.send(data)
 });
-app.listen();
+app.listen(port,()=>{
+    console.log(`server listening on port is ${port}`);
+});
 
 
-module.exports=app;
+// module.exports=app;
