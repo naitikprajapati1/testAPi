@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const data = require('./data');
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 // set path
