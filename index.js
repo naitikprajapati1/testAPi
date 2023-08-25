@@ -13,7 +13,7 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.render('home')
 });
-app.get('api/city', (req, res) => {
+app.get('/city', (req, res) => {
     res.send(data)
 });
 app.listen(port,()=>{
